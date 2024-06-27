@@ -71,6 +71,10 @@ function App() {
   const scrollingRef = useRef(false);
   const lastScrollTime = useRef(Date.now());
 
+  useEffect(() => {
+    scrollToSection(0);
+  }, []);
+
   const scrollToSection = (index) => {
     if (scrollingRef.current) return;
     scrollingRef.current = true;

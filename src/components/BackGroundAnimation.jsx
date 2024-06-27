@@ -3,11 +3,11 @@ import styled, { keyframes } from "styled-components";
 
 const moveUp = keyframes`
   0% {
-    transform: translateY(-100vh);
+    transform: translateY(80vh);
     opacity: 1;
   }
   100% {
-    transform: translateY(100vh);
+    transform: translateY(-80vh);
     opacity: 0.9;
   }
 `;
