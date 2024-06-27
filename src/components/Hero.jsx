@@ -17,8 +17,9 @@ const HeroSection = styled.section`
 function Hero() {
   return (
     <>
+      {" "}
+      <BackgroundAnimation />
       <HeroSection>
-        <BackgroundAnimation />
         <h1>Welcome to My Portfolio</h1>
         <p>프론트엔드 개발자 성열홍 포트폴리오 입니다.</p>
       </HeroSection>

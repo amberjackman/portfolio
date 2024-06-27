@@ -27,7 +27,7 @@ const AppContainer = styled.div`
 `;
 
 const SectionsContainer = styled.div`
-  background: linear-gradient(to bottom, #3a1c71, #d76d77, #eaccb8);
+  background: linear-gradient(to bottom, #3a1c71, #d76d77, #f6c06b);
   height: 400vh;
   transition: transform 0.5s cubic-bezier(0.7, 0.04, 0.04, 1);
   background-attachment: scroll;
