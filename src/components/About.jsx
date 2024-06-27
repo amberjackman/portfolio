@@ -20,7 +20,7 @@ const ChartContainer = styled.div`
   /* padding-left: 350px; */
   width: 50%;
   color: black;
-  font-family: "Roboto Mono", "NanumSquareNeoBold", monospace, sans-serif;
+  /* font-family: "Roboto Mono", "NanumSquareNeoBold", monospace, sans-serif; */
 
   @media (min-width: 768px) {
     padding-left: 0px;

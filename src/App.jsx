@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 
 const GlobalStyle = createGlobalStyle`
   body {
-    font-family: 'Roboto Mono', 'NanumSquareNeoBold', monospace, sans-serif;
+    font-family: 'Roboto Mono', 'NanumSquareNeo', monospace, sans-serif;
     margin: 0;
     padding: 0;
   }
