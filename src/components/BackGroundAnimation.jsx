@@ -3,24 +3,23 @@ import styled, { keyframes } from "styled-components";
 
 const moveUp = keyframes`
   0% {
-    transform: translateY(00vh);
+    transform: translateY(-100vh);
+    opacity: 1;
   }
   100% {
-    transform: translateY(-100vh);
+    transform: translateY(100vh);
+    opacity: 0.9;
   }
 `;
 
-const FloatingText = styled.div`
-  font-family: "Roboto Mono", "NanumSquareNeoBold", monospace, sans-serif;
+const FloatingDot = styled.div`
   position: absolute;
-  display: inline-block;
   top: ${(props) => props.startTop || "100%"};
   left: ${(props) => props.startLeft || "50%"};
-  animation: ${moveUp} 30s linear infinite;
-  font-size: ${(props) => props.fontSize || "16px"};
-  color: ${(props) => props.color || "black"};
-  opacity: 0.3;
-  z-index: 9999;
+  font-size: ${(props) => props.size || "16px"};
+  color: ${(props) => props.color || "white"};
+  animation: ${moveUp} ${(props) => props.duration || "30s"} linear infinite;
+  z-index: -1;
 `;
 
 const BackgroundAnimationContainer = styled.div`
@@ -28,46 +27,30 @@ const BackgroundAnimationContainer = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  height: 1000%;
-  overflow: hidden;
+  height: 100%;
+  /* overflow: hidden; */
   pointer-events: none;
   background: transparent;
 `;
 
 const BackgroundAnimation = () => {
-  const createFloatingText = () => {
-    const keywords = [
-      "const",
-      "let",
-      "var",
-      "function",
-      "callback",
-      "promise",
-      "async",
-      "await",
-      "json",
-      "array",
-      "object",
-      "GET",
-    ];
-    const index = Math.floor(Math.random() * keywords.length);
-    return keywords[index];
+  const createFloatingDot = () => {
+    return ".";
   };
 
   return (
     <BackgroundAnimationContainer>
       {[...Array(100)].map((_, index) => (
-        <FloatingText
+        <FloatingDot
           key={index}
-          fontSize={`${Math.floor(Math.random() * 24) + 12}px`}
-          color={`rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(
-            Math.random() * 256
-          )}, ${Math.floor(Math.random() * 256)})`}
-          startTop={`${Math.random() * 100}%`}
-          startLeft={`${Math.random() * 100}%`}
+          size={`${Math.floor(Math.random() * 5) + 4}px`}
+          color={`rgba(255, 255, 255, ${Math.random() * 1 + 1})`}
+          startTop={`${Math.random() * 80}vh`}
+          startLeft={`${Math.random() * 100}vw`}
+          duration={`${Math.random() * 100 + 10}s`}
         >
-          {createFloatingText()}
-        </FloatingText>
+          {createFloatingDot()}
+        </FloatingDot>
       ))}
     </BackgroundAnimationContainer>
   );

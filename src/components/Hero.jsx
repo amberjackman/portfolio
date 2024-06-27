@@ -3,6 +3,7 @@ import styled, { keyframes } from "styled-components";
 import BackgroundAnimation from "./BackGroundAnimation";
 
 const HeroSection = styled.section`
+  width: 100vh;
   position: relative;
   color: #fff;
   text-align: center;
@@ -15,11 +16,13 @@ const HeroSection = styled.section`
 
 function Hero() {
   return (
-    <HeroSection>
-      <BackgroundAnimation />
-      <h1>Welcome to My Portfolio</h1>
-      <p>프론트엔드 개발자 성열홍 포트폴리오 입니다.</p>
-    </HeroSection>
+    <>
+      <HeroSection>
+        <BackgroundAnimation />
+        <h1>Welcome to My Portfolio</h1>
+        <p>프론트엔드 개발자 성열홍 포트폴리오 입니다.</p>
+      </HeroSection>
+    </>
   );
 }
 

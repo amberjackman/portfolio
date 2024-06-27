@@ -7,30 +7,33 @@ const AboutSection = styled(animated.section)`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem;
+  align-items: center;
   width: 80%;
-  margin: 20px auto;
+
   overflow-y: auto !important;
 `;
 
 const ChartContainer = styled.div`
-  padding-top: 20px;
-  margin-left: 0px;
-  width: 80%;
-  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding-left: 350px; */
+  width: 50%;
   color: black;
   font-family: "Roboto Mono", "NanumSquareNeoBold", monospace, sans-serif;
+
+  @media (min-width: 768px) {
+    padding-left: 0px;
+  }
+  /* border: 1px solid black; */
 `;
 
 const AboutGridContainer = styled.div`
   display: grid;
   justify-content: center;
-  align-items: center;
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
   height: 50%;
-
-  border: 2px solid yellow;
 `;
 
 const AboutCard = styled.div`
@@ -41,27 +44,29 @@ const AboutCard = styled.div`
 `;
 
 function About() {
-  const fadeIn = useSpring({
-    from: { opacity: 0 },
-    to: { opacity: 1 },
-    config: { duration: 1000 },
-  });
+  // const fadeIn = useSpring({
+  //   from: { opacity: 0 },
+  //   to: { opacity: 1 },
+  //   config: { duration: 1000 },
+  // });
 
   return (
-    <AboutSection style={fadeIn} id="about">
-      <h2>About Me</h2>
-      <AboutGridContainer>
-        <AboutCard></AboutCard>
-        <AboutCard></AboutCard>
-        <AboutCard></AboutCard>
-        <AboutCard></AboutCard>
-        <AboutCard></AboutCard>
-        <AboutCard></AboutCard>
-      </AboutGridContainer>
-      <ChartContainer>
-        <LineGraph />
-      </ChartContainer>
-    </AboutSection>
+    <>
+      <AboutSection
+        // style={fadeIn}
+        id="about"
+      >
+        <h2>About Me</h2>
+        <AboutGridContainer>
+          <AboutCard></AboutCard>
+          <AboutCard></AboutCard>
+          <AboutCard></AboutCard>
+        </AboutGridContainer>
+        <ChartContainer>
+          <LineGraph />
+        </ChartContainer>
+      </AboutSection>
+    </>
   );
 }
 
