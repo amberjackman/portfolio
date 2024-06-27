@@ -3,11 +3,11 @@ import styled, { keyframes } from "styled-components";
 
 const moveUp = keyframes`
   0% {
-    transform: translateY(100vh);
+    transform: translateY(80vh);
     opacity: 1;
   }
   100% {
-    transform: translateY(-100vh);
+    transform: translateY(-50vh);
     opacity: 0.9;
   }
 `;
@@ -47,7 +47,7 @@ const BackgroundAnimation = () => {
           color={`rgba(255, 255, 255, ${Math.random() * 1 + 1})`}
           startTop={`${Math.random() * 80}vh`}
           startLeft={`${Math.random() * 100}vw`}
-          duration={`${Math.random() * 100 + 10}s`}
+          duration={`${Math.random() * 100 + 5}s`}
         >
           {createFloatingDot()}
         </FloatingDot>
