@@ -20,6 +20,7 @@ const CardContainer = styled.div`
   flex-direction: horizontal;
 
   @media (max-width: 768px) {
+    min-width: 100%;
     justify-content: start;
     overflow: scroll;
   }
@@ -31,7 +32,7 @@ const ProjectCard = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  min-width: 30vh;
+  width: 40vh;
   height: 500px;
   background: rgba(51, 51, 51, 0.7);
   backdrop-filter: blur(10px);
@@ -146,7 +147,7 @@ function Projects() {
 
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
