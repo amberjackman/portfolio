@@ -16,7 +16,7 @@ const LineGraph = () => {
     {
       title: "2024",
       cardTitle: " ",
-      cardSubtitle: "동대문 청년사관학교 세일즈포스 과정 수료",
+      cardSubtitle: "청년사관학교 세일즈포스 과정 수료",
     },
   ];
 

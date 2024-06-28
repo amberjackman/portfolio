@@ -23,8 +23,10 @@ const ChartContainer = styled.div`
   color: black;
   /* font-family: "Roboto Mono", "NanumSquareNeoBold", monospace, sans-serif; */
 
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     padding-left: 0px;
+    width: 130%;
+    overflow-x: hidden;
   }
   /* border: 1px solid black; */
 `;
@@ -32,16 +34,21 @@ const ChartContainer = styled.div`
 const AboutGridContainer = styled.div`
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  grid-template-columns: repeat(3, 0.3fr);
   width: 100%;
   height: 50%;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 0.3fr);
+  }
 `;
 
 const AboutCard = styled.div`
   justify-self: center;
   width: 120px;
   height: 120px;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
 `;
 
 function About() {
@@ -59,9 +66,17 @@ function About() {
       >
         <h2>About Me</h2>
         <AboutGridContainer>
-          <AboutCard></AboutCard>
-          <AboutCard></AboutCard>
-          <AboutCard></AboutCard>
+          <AboutCard>
+            Name <br />
+            성열홍
+          </AboutCard>
+          <AboutCard>
+            Address <br /> 서울 구로
+          </AboutCard>
+          <AboutCard>
+            Birth
+            <br /> 95.04
+          </AboutCard>
         </AboutGridContainer>
         <ChartContainer>
           <LineGraph />
