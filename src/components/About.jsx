@@ -4,6 +4,7 @@ import { useSpring, animated } from "react-spring";
 import LineGraph from "./LineGraph";
 
 const AboutSection = styled(animated.section)`
+  font-size: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;

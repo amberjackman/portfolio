@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const ProjectsSection = styled(animated.section)`
+  font-size: 0.9rem;
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -17,6 +18,11 @@ const CardContainer = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: horizontal;
+
+  @media (max-width: 768px) {
+    justify-content: start;
+    overflow: scroll;
+  }
 `;
 
 const ProjectCard = styled.div`
@@ -25,7 +31,7 @@ const ProjectCard = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  min-width: 30%;
+  min-width: 30vh;
   height: 500px;
   background: rgba(51, 51, 51, 0.7);
   backdrop-filter: blur(10px);
@@ -35,7 +41,10 @@ const ProjectCard = styled.div`
   padding: 1rem;
   transition: transform 0.3s;
   color: white !important;
-
+  @media (max-width: 768px) {
+    min-width: 70%;
+    min-height: 100%;
+  }
   > a {
     margin-top: -3rem;
     text-decoration: none;
@@ -305,14 +314,15 @@ function Projects() {
                       <AltText>CSS</AltText>
                       <img src="/images/svg/TypeScript.svg" alt="TypeScript" />
                       <AltText>
-                        많은 데이터가 REST API를 통해 전달되고 그에 따른 관리를
-                        위해 TypeScript를 사용하였습니다
+                        많은 데이터가 전달되고, 그에 따른 관리를 위해
+                        TypeScript를 사용하였습니다
                       </AltText>
                     </CustomIcon>
                     <CustomIcon>
-                      <img src="/images/svg/React.svg" alt="React" />
+                      <img src="/images/svg/NextJS-Light.svg" alt="React" />
                       <AltText>
-                        제일 익숙하고 자신 있는 React를 사용하였습니다.
+                        Nextjs를 통해 페이지 라우팅과 REST API에서의 이점을 얻기
+                        위해 선택하였습니다.
                       </AltText>
                       <img src="/images/svg/Vite-Light.svg" alt="Vite" />
                       <AltText>
@@ -334,8 +344,8 @@ function Projects() {
                       </AltText>
                       <img src="/images/svg/Zustand.svg" alt="Zustand" />
                       <AltText>
-                        데이터들의 상태관리를 위해 Zustand를 사용하였습니다.
-                        Redux보다 직관적이고 간편하여 해당 프로젝트에 알맞다고
+                        상태관리를 위해 Zustand를 사용하였습니다. Redux보다
+                        직관적이고 간편하여 해당 프로젝트에 알맞다고
                         판단하였습니다.
                       </AltText>
                     </CustomIcon>
