@@ -85,6 +85,19 @@ const InnerCard = styled.div`
     border-radius: 10px;
     object-fit: contain;
   }
+
+  > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  > a > img {
+    max-width: 60%;
+    max-height: 20%;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    object-fit: contain;
+  }
   /* border: 1px solid red; */
 `;
 
@@ -174,7 +187,13 @@ function Projects() {
             <Slider {...settings}>
               <div>
                 <InnerCard>
-                  <img src="/images/footchu_logo.png" alt="footchu logo" />
+                  <a
+                    href="https://footchu.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src="/images/footchu_logo.png" alt="aminoisy logo" />
+                  </a>
                 </InnerCard>
                 축구화를 추천해주는 SPA 입니다.
                 <br /> <br /> 사용자의 취향을 입력 받아 해당 사항에 맞는
@@ -205,8 +224,8 @@ function Projects() {
                       <AltText>
                         초기 계획된 기능만을 구현하는데에 Vue가 유리하다고
                         판단했지만, <br />
-                        장기적으로 많은 기능을 도입할 계획이 있어 Vue대신
-                        react를 사용하였습니다
+                        장기적으로 많은 기능을 도입할 예정이므로 Vue대신 react를
+                        사용하였습니다
                       </AltText>
                       <img src="/images/svg/Vite-Light.svg" alt="Vite" />
                       <AltText>빠른 빌드를 위해 Vite를 사용하였습니다</AltText>
@@ -239,12 +258,20 @@ function Projects() {
             <Slider {...settings}>
               <div>
                 <InnerCard>
-                  <img src="/images/portfolio_logo.png" alt="footchu logo" />
+                  <a
+                    href="https://seongyeolhongportfolio.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src="/images/portfolio_logo.png" alt="aminoisy logo" />
+                  </a>
                 </InnerCard>
                 보고 계신 현재 사이트 입니다. <br /> <br /> 스크롤 경험을 통해
                 밤하늘에서 내려오는 것 같은 사용감과 <br /> <br /> 페이지 전체가
                 하나의 PPT와 같은 느낌을 주려고 노력했습니다.
-                <br /> <br /> 데스크탑에 최적화 되어 있습니다.
+                <br />
+                <br />
+                반응형 디자인을 통해 모바일 디바이스의 사용성도 고려하였습니다.
               </div>
               <div>
                 <InnerCard>
@@ -291,19 +318,28 @@ function Projects() {
           </ProjectCard>
           <ProjectCard>
             <a
-              href="https://footchu.vercel.app/"
+              href="https://aminoisy.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              UNTITLE
+              Am I Noisy?
             </a>
             <Slider {...settings}>
               <div>
                 <InnerCard>
-                  <img src="/images/footchu_logo.png" alt="footchu logo" />
+                  <a
+                    href="https://aminoisy.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src="/images/aminoisy_logo.png" alt="aminoisy logo" />
+                  </a>
                 </InnerCard>
                 유저의 아이디와 태그를 입력받아 RIOT API를 사용, 최근 게임에서
-                보낸 신호의 종류와 횟수를 받아와 사용자에게 보여줍니다
+                보낸 신호의 종류와 횟수를 받아와 사용한 평균 횟수를 사용자에게
+                보여줍니다 <br />
+                <br />
+                반응형 디자인을 통해 모바일 디바이스의 사용성도 고려하였습니다.
               </div>
               <div>
                 <InnerCard>
@@ -322,19 +358,20 @@ function Projects() {
                     <CustomIcon>
                       <img src="/images/svg/NextJS-Light.svg" alt="React" />
                       <AltText>
-                        Nextjs를 통해 페이지 라우팅과 REST API에서의 이점을 얻기
-                        위해 선택하였습니다.
+                        Nextjs가 가진 API 라우팅의 이점을 얻기 위해
+                        선택하였습니다.
                       </AltText>
-                      <img src="/images/svg/Vite-Light.svg" alt="Vite" />
+                      <img src="/images/svg/Webpack-Light.svg" alt="Webpack" />
                       <AltText>
-                        빠른 빌드와 반응을 위해 Vite를 사용하였습니다
+                        빠른 초기 설정과 추후 안정성을 위해 Webpack을
+                        사용하였습니다
                       </AltText>
                       <img
                         src="/images/svg/TailwindCSS-Light.svg"
                         alt="TailWindCss"
                       />
                       <AltText>
-                        직관적이고 빠른 설정들을 위해 사용하였습니다.
+                        직관적이고 간편한 Tailwind를 사용하였습니다.
                       </AltText>
                     </CustomIcon>
                     <CustomIcon>
