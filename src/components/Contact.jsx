@@ -76,7 +76,7 @@ function Contact() {
 
   const handleCopy = () => {
     setCopied(true);
-    setTimeout(() => setCopied(false), 1000);
+    setTimeout(() => setCopied(false), 800);
   };
 
   return (
@@ -88,17 +88,19 @@ function Contact() {
             <IconBox>
               <img src="/images/telephone.png" alt="phone" />
               <Tooltip>
-                {copied ? "01028954797 복사됨!" : "클릭 시 복사됩니다!"}
+                {copied
+                  ? "01028954797 복사됨!"
+                  : "01028954797 클릭 시 복사됩니다!"}
               </Tooltip>
             </IconBox>
           </CopyToClipboard>
-          <CopyToClipboard text="feverhong@naver.com " onCopy={handleCopy}>
+          <CopyToClipboard text="feverhong@naver.com" onCopy={handleCopy}>
             <IconBox>
               <img src="/images/email.png" alt="email" />
               <Tooltip>
                 {copied
                   ? "feverhong@naver.com 복사됨!"
-                  : " 클릭 시 복사됩니다!"}
+                  : " feverhong@naver.com 클릭 시 복사됩니다!"}
               </Tooltip>
             </IconBox>
           </CopyToClipboard>
