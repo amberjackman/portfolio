@@ -88,7 +88,7 @@ function Contact() {
             <IconBox>
               <img src="/images/telephone.png" alt="phone" />
               <Tooltip>
-                {copied ? "복사됨!" : " 01028954797  클릭 시 복사됩니다!"}
+                {copied ? "01028954797 복사됨!" : "클릭 시 복사됩니다!"}
               </Tooltip>
             </IconBox>
           </CopyToClipboard>
@@ -97,15 +97,15 @@ function Contact() {
               <img src="/images/email.png" alt="email" />
               <Tooltip>
                 {copied
-                  ? "복사됨!"
-                  : "feverhong@naver.com  클릭 시 복사됩니다!"}
+                  ? "feverhong@naver.com 복사됨!"
+                  : " 클릭 시 복사됩니다!"}
               </Tooltip>
             </IconBox>
           </CopyToClipboard>
-          <IconBox>
+          {/* <IconBox>
             <img src="/images/kakao-talk.png" alt="kakaotalk" />
             <Tooltip>클릭 시 연결됩니다!</Tooltip>
-          </IconBox>
+          </IconBox> */}
           <IconBox>
             <a
               href="https://github.com/amberjackman"
