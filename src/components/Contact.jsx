@@ -118,6 +118,16 @@ function Contact() {
             </a>
             <Tooltip>클릭 시 이동합니다!</Tooltip>
           </IconBox>
+          <IconBox>
+            <a
+              href="https://economic-balaur-b87.notion.site/8796e148b40f4bb7be8804947a4c847f?pvs=74"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/images/svg/notion.svg" alt="github" />
+            </a>
+            <Tooltip>클릭 시 이동합니다!</Tooltip>
+          </IconBox>
         </IconContainer>
       </ContactContainer>
     </ContactSection>
