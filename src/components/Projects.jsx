@@ -151,6 +151,14 @@ const IconContainer = styled.div`
   position: relative;
 `;
 
+const LinkContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50%;
+`;
+
 function Projects() {
   const fadeIn = useSpring({
     from: { opacity: 0 },
@@ -195,7 +203,7 @@ function Projects() {
                     <img src="/images/footchu_logo.png" alt="aminoisy logo" />
                   </a>
                 </InnerCard>
-                축구화를 추천해주는 SPA 입니다.
+                축구화 추천, 리뷰 사이트 입니다
                 <br /> <br /> 사용자의 취향을 입력 받아 해당 사항에 맞는
                 축구화를 데이터에 존재하는 축구화와 비교,계산하여 추천해줍니다.
                 <br />
@@ -206,6 +214,7 @@ function Projects() {
                 <br />
                 반응형 디자인을 통해 모바일 디바이스의 사용성도 고려하였습니다.
               </div>
+
               <div>
                 <InnerCard>
                   <IconContainer>
@@ -222,10 +231,7 @@ function Projects() {
                     <CustomIcon>
                       <img src="/images/svg/React.svg" alt="React" />
                       <AltText>
-                        초기 계획된 기능만을 구현하는데에 Vue가 유리하다고
-                        판단했지만, <br />
-                        장기적으로 많은 기능을 도입할 예정이므로 Vue대신 react를
-                        사용하였습니다
+                        편리한 컴포넌트 방식 개발을 위해 react를 사용하였습니다
                       </AltText>
                       <img src="/images/svg/Vite-Light.svg" alt="Vite" />
                       <AltText>빠른 빌드를 위해 Vite를 사용하였습니다</AltText>
@@ -237,13 +243,45 @@ function Projects() {
                     <CustomIcon>
                       <img src="/images/svg/Vercel-Light.svg" alt="Vercel" />
                       <AltText>
-                        빠른 테스트, 배포와 자체 Analystic과 서버리스 함수를
-                        사용하기 위해 Vercel을 사용하였습니다
+                        빠른 테스트, 배포와 Analystic을 사용하기 위해 Vercel을
+                        사용하였습니다
+                      </AltText>
+                      <img src="/images/svg/Supabase-Dark.svg" alt="Vercel" />
+                      <AltText>
+                        축구화와 리뷰, 회원 데이터베이스를 위해 Supabase를
+                        사용하였습니다
+                      </AltText>
+                      <img src="/images/svg/Redux.svg" alt="Vercel" />
+                      <AltText>
+                        각 컴포넌트들 간 복잡한 상태관리를 위해 Redux를
+                        사용하였습니다
                       </AltText>
                     </CustomIcon>
-                    <CustomIcon></CustomIcon>
                   </IconContainer>
                 </InnerCard>
+              </div>
+
+              <div>
+                <LinkContainer>
+                  <CustomIcon>
+                    <a
+                      href="https://economic-balaur-b87.notion.site/FOOTCHU-d5e2465dc1344f86b0ccf91778a73565"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src="/images/svg/notion.svg" alt="github" />
+                    </a>
+                  </CustomIcon>
+                  <CustomIcon>
+                    <a
+                      href="https://github.com/amberjackman/footchu"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src="/images/github.png" alt="github" />
+                    </a>
+                  </CustomIcon>
+                </LinkContainer>
               </div>
             </Slider>
           </ProjectCard>
@@ -313,6 +351,28 @@ function Projects() {
                     </CustomIcon>
                   </IconContainer>
                 </InnerCard>
+              </div>
+              <div>
+                <LinkContainer>
+                  <CustomIcon>
+                    <a
+                      href="https://economic-balaur-b87.notion.site/913285f64bb940c5befa8be3ea329e2e"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src="/images/svg/notion.svg" alt="github" />
+                    </a>
+                  </CustomIcon>
+                  <CustomIcon>
+                    <a
+                      href="https://github.com/amberjackman/portfolio"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src="/images/github.png" alt="github" />
+                    </a>
+                  </CustomIcon>
+                </LinkContainer>
               </div>
             </Slider>
           </ProjectCard>
@@ -389,6 +449,28 @@ function Projects() {
                     </CustomIcon>
                   </IconContainer>
                 </InnerCard>
+              </div>
+              <div>
+                <LinkContainer>
+                  <CustomIcon>
+                    <a
+                      href="https://economic-balaur-b87.notion.site/Am-I-Noisy-API-9a1cc8965e984162ab028c6b30676885?pvs=74"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src="/images/svg/notion.svg" alt="github" />
+                    </a>
+                  </CustomIcon>
+                  <CustomIcon>
+                    <a
+                      href="https://github.com/amberjackman/isthisright"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src="/images/github.png" alt="github" />
+                    </a>
+                  </CustomIcon>
+                </LinkContainer>
               </div>
             </Slider>
           </ProjectCard>

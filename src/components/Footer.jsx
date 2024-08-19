@@ -14,7 +14,7 @@ const FooterContainer = styled.footer`
 function Footer() {
   return (
     <FooterContainer>
-      <p>&copy; 2024 My Portfolio</p>
+      <p>&copy; 2024 Portfolio</p>
     </FooterContainer>
   );
 }
